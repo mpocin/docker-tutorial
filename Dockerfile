@@ -7,7 +7,7 @@ MAINTAINER pictolearn
 
 # RUN COMMAND BASICALLY runs the command in the terminal and creates an image.
 # Install all the updates for UBUNTU
-RUN apt-get update && apt-get install -y python-software-properties software-properties-common
+RUN apt-get clean && apt-get update && apt-get install -y python-software-properties software-properties-common
 
 # Install all the updates for UBUNTU
 RUN apt-get install -y iputils-ping
